@@ -2,6 +2,20 @@
 #### This is used for job opportunity scraping which may be used for future research.
 ##### Research may be updated in the future
 
+## Problem Face:
+- [x] **Date Selection**
+
+Select specific date and page that is need to scrape.
+
+- [ ] **Google connection and update**
+
+Updating to Google may meet problem of write in limit. In order to prevent this problem, need to add in `sleep`. However, and request is so large (usually 80 pages * 20 request per day, and weekly updated), even a 1 second sleep is very time consuming.
+Unsure would there be any other solution to avoid write in limit for Googlesheet.
+
+- [ ] **Selenium break when internet not good enough**
+
+
+
 ## Steps of whole process:
 ### Set up API for code update
 **Set up Googlesheet API through Google**
