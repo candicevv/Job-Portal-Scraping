@@ -14,6 +14,7 @@ Unsure would there be any other solution to avoid write in limit for Googlesheet
 
 - [ ] **Selenium break when internet not good enough**
 
+Refer to [Stackoverflow Question](https://stackoverflow.com/questions/4766556/repeat-python-function-call-on-exception)
 
 
 ## Steps of whole process:
