@@ -14,8 +14,20 @@ Unsure would there be any other solution to avoid write in limit for Googlesheet
 
 - [ ] **Selenium break when internet not good enough**
 
-Refer to [Stackoverflow Question](https://stackoverflow.com/questions/4766556/repeat-python-function-call-on-exception)
-
+Refer to [Stackoverflow Question](https://stackoverflow.com/questions/4766556/repeat-python-function-call-on-exception), when Internet is not good enough, can try picking up objects for several times until the page is successfully loaded.
+```
+import functools
+def try_5_times(fn):
+    @functools.wraps(fn) #keeps name and docstring of old function
+    def new_fn(*args, **kwargs):
+        for i in range(5):
+            try:
+                return fn(*args, **kwargs)
+            except:
+                time.sleep(1)
+                pass
+    return new_fn
+```
 
 ## Steps of whole process:
 ### Set up API for code update
