@@ -28,6 +28,9 @@ def try_5_times(fn):
                 pass
     return new_fn
 ```
+Can solve the problem sometimes, but still may face error.
+May need other solution.
+
 
 ## Steps of whole process:
 ### Set up API for code update
