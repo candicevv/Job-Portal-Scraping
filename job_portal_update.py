@@ -27,7 +27,7 @@ import re
 now = datetime.datetime.now()
 wks.resize(n_row)
 
-print("Please Select the day do you want to scrape?")
+print("Please Select the day that you want to scrape?")
 number=input("1 - Yesterday | 2 - Today | 3 - Input Date Range ")
 start_page = 0
 
@@ -79,11 +79,11 @@ if number=="3":
                     # we're ready to exit the loop.
                     break
 elif number=="2":
-    s_diff="today"
     e_diff="today"
-elif number=="1":
     s_diff="yesterday"
+elif number=="1":
     e_diff="yesterday"
+    s_diff="2 days ago"
 else:
     print("Input Wrong Selection!")
     exit()
